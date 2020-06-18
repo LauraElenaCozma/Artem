@@ -1,0 +1,366 @@
+    body, html 
+    {
+        height: 100%;
+        
+        margin: 0;
+    }
+    body{
+        background-image:url("deanna-j-3GZlhROZIQg-unsplash.jpg");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+
+    #navbar
+    {   
+        
+        position: fixed;
+        top:0;              /* am pozitionat bara fix fata de partea de sus */
+        display: flex;
+        background: rgb(248, 245, 245,0.4); /* de ce nu afiseaza background color*/
+        width: 100%;
+        /* MAI TREBUIE MARGIN 0 ????margin:0;  */
+        
+    }
+    #lefthalf
+    {
+        display:inline-flex;
+        width:40%;
+    }
+    #leftnav
+    {
+        display: inline-flex;   
+        justify-content: flex-start;
+        width: 10%; 
+    
+    }
+    #logobar
+    {
+        height:50px;
+    }
+    #centernav
+    {
+        display: inline-flex;
+        justify-content: center;
+        width: 80%;
+        
+    }
+    #inputnav
+    {
+        
+        background: none;
+        height:40%;
+        width:80%;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        text-decoration-color: cornflowerblue;
+        border-radius:20px;
+        margin-top: 2%;
+
+        
+    }
+    #rightnav
+    {
+        display: inline-flex;
+        justify-content: flex-end;
+        width: 60%;
+
+    }
+
+    .tabs
+    {
+
+        text-decoration: none;
+        color: #003038;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        /*border: 1px solid white;*/
+        top: 23%;
+        
+        
+        padding: 5px 6px;
+        font-size: 18px;
+
+        position:relative;
+
+
+        
+
+    }
+
+
+    .dropdown
+    {
+        position: relative;
+        display: inline-block; /*de ce??*/
+        margin-right:4%;
+    }
+
+    .dropdown-content
+    {
+        display: none;
+        position: absolute;
+        top:63%; /* ca sa stea sub scris*/
+        background-color: rgb(248 , 245 , 245 , 0.7);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1; /*ca sa treaca peste bara de meniu*/
+    }
+
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size:18px;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1} /*culoarea in care se coloreaza casuta cand treci cu mouse ul pe deasupra*/
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    div.dropdown-content a:nth-child(odd)
+    {
+        background-color: rgb(255 , 255 , 255 , 0.3);
+    }
+
+
+
+    ul li figure
+    {
+        flex: 1 1 auto;
+        display:inline;
+        margin:1em;
+    }
+    ul li figure img
+    {
+        width:40%;
+        height:auto;
+        
+    }
+
+        .homedesign
+        {
+            display:block;
+            height: 12%;
+            width:25%;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:#003038;
+            
+            margin-left: auto;
+            margin-right: auto;
+            text-align:center;
+            
+        }
+        #div1
+        {
+            font-size:95px;
+            margin-top:9%;
+            animation-name:titlu;
+            animation-duration:7s;
+        }
+        #div2
+        {
+            font-size:37px;
+            background-color:rgb(248, 245, 245,0.4);
+            margin-top:7%;
+        }
+
+        hr
+        {
+            display:none;
+        }
+        @media screen and (max-width:410px)
+        {
+            .homedesign
+            {
+                width:62%;
+                height:12%;
+            }
+
+            #div1
+            {
+                margin-top:60%;
+                font-size:60px;
+            }
+
+            #div2
+            {
+                margin-top:4%;
+                font-size:25px;
+                height:64px;
+            }
+            hr
+            {
+                display:block;
+                margin:0;
+            }
+        }
+
+        
+        @media screen and (min-width:411px) and (max-width:650px)
+        {
+            .homedesign
+            {
+                width:50%;
+                height:14%;
+            }
+
+            #div1
+            {
+                margin-top:48%;
+                font-size:57px;
+               
+            }
+
+            #div2
+            {
+                margin-top:3%;
+                font-size:25px;
+            }
+            
+        }
+
+        @keyframes titlu
+        {
+            0%  {filter:blur(7px);}
+            100%  {filter:blur(0);}
+        }
+
+        @media screen and (min-width:651px) and (max-width:916px)
+        {
+            .homedesign
+            {
+                width:42%;
+                height:14%;
+            }
+
+            #div1
+            {
+                margin-top:17%;
+                font-size:90px;
+            }
+
+            #div2
+            {
+                margin-top:3%;
+                font-size:32px;
+            }
+            #div1
+            {
+                margin-top:25%;
+            }
+            #div2
+            {
+                height:70px;
+            }
+        }
+
+
+       
+
+        footer
+          {
+              background-color:black;
+              height:15%;
+              position:fixed;
+              bottom: 0;
+            
+          }
+
+        @media screen and (max-width: 600px)
+        {
+            #navbar
+            {
+                display:block;
+                padding-bottom:10px;
+            }
+            #lefthalf
+            {
+                display:block;
+                width:100%;
+            }
+            #leftnav
+            {
+                width:20%;
+            }
+            #centernav
+            {
+                vertical-align:100%;
+                width:75%;
+            }
+            #rightnav
+            {
+                width:100%;
+                height:43px;
+            }
+            .dropdown
+            {
+                margin-right:1%;
+            }
+            .tabs
+            {
+                display:block;
+            }
+            .tabs
+            {
+                font-size:15px;
+            }
+
+            .dropdown-content a
+            {
+                font-size:15px;
+            }
+
+            
+        }
+
+        @media screen and (min-width:601px) and (max-width:800px)
+        {
+            .dropdown
+            {
+                margin-right:2%;
+            }
+            #leftnav
+            {
+                width:12%;
+            }
+            #centernav
+            {
+                margin-top:2%;
+            }
+            .tabs
+            {
+                font-size:17px;
+            }
+            .dropdown-content a
+            {
+                font-size:17px;
+            }
+
+        }
+
+        #selectLang
+        {
+            position:absolute;
+            top:25%;
+            right:0;
+            background-color:rgb(248, 245, 245,0.4);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border:none;
+            height:35px;
+        }
+
+        .langOpt
+        {
+            background-color:rgb(248, 245, 245,0.4);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border:none;
+            height:50px;
+        }
+
+
+

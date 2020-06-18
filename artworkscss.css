@@ -1,0 +1,435 @@
+body, html 
+{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-image:url("deanna-j-3GZlhROZIQg-unsplash.jpg");
+    background-position:center;
+    background-repeat:repeat;
+    background-size:cover;
+}
+
+
+#navbar
+{   
+
+position: fixed;
+top:0;              /* am pozitionat bara fix fata de partea de sus */
+display: flex;
+background: rgb(248, 245, 245,0.4); /* de ce nu afiseaza background color*/
+width: 100%;
+/* MAI TREBUIE MARGIN 0 ????margin:0;  */
+
+}
+#lefthalf
+{
+display:inline-flex;
+width:40%;
+}
+#leftnav
+{
+display: inline-flex;   
+justify-content: flex-start;
+width: 10%; 
+
+}
+#logobar
+{
+height:50px;
+}
+#centernav
+{
+display: inline-flex;
+justify-content: center;
+width: 80%;
+
+}
+#inputnav
+{
+
+background: whitesmoke;
+height:35%;
+width:60%;
+border-radius:20px;
+margin-top: 2%;
+font-size: 16px; /* Increase font-size */
+padding: 12px 20px 12px 40px; /* Add some padding */
+border: 1px solid #ddd; /* Add a grey border */
+margin-bottom: 12px; /* Add some space below the input */
+
+}
+#rightnav
+{
+display: inline-flex;
+justify-content: flex-end;
+width: 60%;
+
+}
+
+.tabs
+{
+
+text-decoration: none;
+color: #003038;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+/*border: 1px solid white;*/
+top: 23%;
+
+
+padding: 5px 6px;
+font-size: 18px;
+
+position:relative;
+
+
+
+
+}
+
+
+.dropdown
+{
+position: relative;
+display: inline-block; /*de ce??*/
+margin-right:4%;
+}
+
+.dropdown-content
+{
+display: none;
+position: absolute;
+top:63%; /* ca sa stea sub scris*/
+background-color: rgb(248 , 245 , 245 , 0.7);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1; /*ca sa treaca peste bara de meniu*/
+}
+
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+font-size:18px;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1} /*culoarea in care se coloreaza casuta cand treci cu mouse ul pe deasupra*/
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+div.dropdown-content a:nth-child(odd)
+{
+background-color: rgb(255 , 255 , 255 , 0.3);
+}
+
+hr
+{
+display:none;
+}
+  
+@media screen and (max-width: 600px)
+{
+#navbar
+{
+    display:block;
+    padding-bottom:10px;
+}
+#lefthalf
+{
+    display:block;
+    width:100%;
+}
+#leftnav
+{
+    width:20%;
+}
+#centernav
+{
+    vertical-align:100%;
+    width:75%;
+}
+#rightnav
+{
+    width:100%;
+    height:43px;
+}
+.dropdown
+{
+    margin-right:1%;
+}
+.tabs
+{
+    display:block;
+}
+.tabs
+{
+    font-size:15px;
+}
+
+.dropdown-content a
+{
+    font-size:15px;
+}
+
+hr
+{
+    display:block;
+   margin:0;
+}
+
+
+}
+
+@media screen and (min-width:601px) and (max-width:800px)
+{
+.dropdown
+{
+    margin-right:2%;
+}
+#leftnav
+{
+    width:12%;
+}
+#centernav
+{
+    margin-top:2%;
+}
+.tabs
+{
+    font-size:17px;
+}
+.dropdown-content a
+{
+    font-size:17px;
+}
+
+}
+
+
+  #container
+  {
+      background-color:rgba(255 , 255 , 255 , 0.7);
+      display:flex;
+      margin-top:7%;
+      min-height:83%;
+      width:85%;
+      margin-left:auto;
+      margin-right:auto;
+      flex-direction:column;
+      align-items:center;
+
+  }
+
+
+  #title
+  {
+      display:inline-block;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:2%;
+  }
+
+
+  #title1
+  {
+      display:inline-block;
+      text-align:center;
+      font-weight:400;
+      font-family:'Playfair Display', serif;
+      font-size:40px;
+      width:100%;
+  }
+  #title2
+  {
+      margin:0;
+      font-style: italic;
+      text-align:center;
+      font-weight:400;
+      font-family:'Playfair Display', serif;
+      font-size:30px;
+  }
+
+  .caption
+        {
+            margin:0;
+            font-family:'Playfair Display', serif;
+            font-size:12px;
+            color:#7f7f7f;
+            line-height: 18px;
+            letter-spacing: 1px;
+            text-align:justify;
+            margin-left:8%;
+            width:75%;
+        }
+
+    #gallery
+    {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        padding:2px;
+        width:100%;
+        justify-content:center;
+    }
+    #gallery > figure
+    {
+        padding:2px;
+        text-align:center;
+        margin-left:1%;
+        margin-right:2%;
+    }
+
+    #gallery > figure > img
+    {
+        height:200px;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        transition:transform 1s; /*pentru a se mari treptat*/
+        
+    }
+
+    #gallery > figure >img:hover
+    {
+        transform:scale(1.5);/*se mareste de 1.5 ori*/
+    }
+ 
+
+   @media screen and (max-width:450px)
+  {
+      #container
+      {
+          margin-top:33%;
+          width:83%;
+          margin-left:auto;
+          margin-right:auto;
+      }
+      #title1
+      {
+          margin-top:4%;
+          font-size:35px;
+      }
+      #title2
+      {
+          font-size:25px;
+          font-weight:400;
+          width:96%;
+          margin-bottom:3%;
+      }
+
+   
+     
+  }
+
+
+  @media screen and (min-width:451px) and (max-width:1050px)
+  {
+      #container
+      {
+          width:85%;
+      }
+
+
+    
+  }
+
+  footer
+  { 
+      margin-top:2%;
+      color:whitesmoke;
+      font-family:'Playfair Display', serif;
+      font-size:18px;
+      
+      background-color:rgba(0,0,0);
+      height:35%;
+      text-align:center;
+  }
+
+  .contact_icons
+  {
+      margin-top:6px;
+      margin-right:10px;
+      height:30px;
+      border-radius:20%;
+
+  }
+
+    #selectLang
+        {
+            position:absolute;
+            top:25%;
+            right:0;
+            background-color:rgb(248, 245, 245,0.4);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border:none;
+            height:35px;
+        }
+
+        .langOpt
+        {
+            background-color:rgb(248, 245, 245,0.4);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border:none;
+            height:50px;
+        }
+
+    #numeAbonare
+    {
+        display:block;
+        width: 150px;
+    }
+    #emailAbonare
+    {
+        display:block;
+        width: 150px;
+    }
+    #butonAbonare
+    {
+        margin-top:1%;
+        display:block;
+        width: 80px;
+        background-color: black;
+        color:white;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border:1px solid burlywood;
+
+    }
+    #abonare
+    {
+        
+        align-items:center;
+        align-content:center;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .boxSubscribe
+    {
+        position :fixed;
+        top : 30%;
+        left :46%;
+        z-index : 10;
+        background-color :black;
+        color : white;
+        text-align : center;
+        padding : 17px;
+        font-size : 15px;
+        font-family : Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #containerBoxSubscribe
+    {
+        width : 100%;
+        height : 100%;
+        background-color :black;
+        opacity : 0.7;
+        z-index : 3;
+        position : fixed;
+        top : 0;
+        left : 0;
+    }

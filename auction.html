@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>
+            Your art page
+        </title>
+
+        <link rel="stylesheet" href="auctioncss.css">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="auction.js"></script>
+
+    </head>
+
+
+
+
+    <body>
+
+        <!--Background-->
+        <div class="bg"></div>
+        <!-- Bara de navigare -->
+
+        
+        <nav id="navbar">
+                        <div id="lefthalf">
+                        <div id="leftnav">
+                            <img  id="logobar" src="imageedit_4_2558129943.png" alt="LOGO">
+                        </div>
+            
+                        <div id="centernav">
+                       
+                        </div>
+                        </div>
+                        <hr>
+                        <div id="rightnav">
+                            <div class="dropdown">
+                            <a class="tabs" href="proiect.html">HOME</a>
+                            </div>
+            
+                            <div class="dropdown">
+                                <a class="tabs" href="artworks.html">ARTWORKS</a>
+                                </div>
+                               <div class="dropdown">
+                               <a class="tabs" href="#artworks">ART MOVEMENTS</a>
+                               <div class="dropdown-content">
+                                   <a href="renaissance.html">RENAISSANCE</a>
+                                   <a href="post-impressionism.html">POST-IMPRESSIONISM</a>
+                                   <a href="surrealism.html">SURREALISM</a>
+                           </div>
+                           </div>
+            
+                           <div class="dropdown">
+                           <a class="tabs" href="auction.html">AUCTION</a>
+                           </div>
+                         
+                        </div>
+            
+                    </nav>
+
+
+    <div id="background_top">
+    <div id="title1">ARTEM</div>
+    <div id="title2">Buy your favourite artworks</div>
+    </div>
+    <div id="container">
+
+                <button class="open-button" onclick="openForm()">Add Your Work</button>
+
+                <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                <h2>Tell something about your artwork</h2>
+
+                <label for="ftitle"><b>Title</b></label>
+                <input type="text" placeholder="The title is..." name="ftitle" required>
+
+                <label for="fdesc"><b>Description</b></label>
+                <input type="text" placeholder="Description..." name="fdesc" required>
+                
+                <label for="fartist"><b>Artist</b></label>
+                <input type="text" placeholder="ex. Andre Breton" name="fartist" required>
+
+                <label for="fdimensions"><b>Dimensions</b></label>
+                <input type="text" placeholder="ex. 145 x 145 cm " name="fdimensions" required>
+                
+                <label for="fprice"><b>Price</b></label>
+                <input type="text" placeholder="ex. 600$" name="fprice" required>
+                
+                <input type="file" id="chooseImage">
+                <div id = "sendData"></div>
+                <button type="button" class="btn"  onclick = "submitData()">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+                </div>
+
+            <div class="container_sold">
+                    <img class="painting" src="auction5.jpg" alt="auction 5">
+                    <div class="description">
+                    <div class="dtitle">What Can I Do? </div><br>
+                     <div class="descr">  This painting individual hypocrisy towards the society and vice versa.</div>
+                    <div class="dcontent">
+                            Artist: Anastasia Lemberg-Lvova  <br>
+                            Dimensions: 145 x 145 cm <br>
+                            Price: 1538$ <br>
+                    </div>
+                    </div>
+            </div>
+
+
+            <div class="container_sold">
+                    <img class="painting" src="auction6.jpg" alt="auction 6">
+                    <div class="description">
+                    <div class="dtitle">Unknown Depth </div><br>
+                     <div class="descr">  Acrylic, oil, canva</div>
+                    <div class="dcontent">
+                            Artist: Juss Piho  <br>
+                            Dimensions: 180 x 180 cm <br>
+                            Price: 14615$ <br>
+                    </div>
+                    </div>
+               
+            </div>
+            
+        <div class="container_sold">
+
+                <img class="painting" src="auction1.jpg" alt="auction 1">
+                <div class="description">
+                <div class="dtitle">Can we talk? </div><br>
+                 <div class="descr"> Painted with Coffee and cement on canvas</div>
+                <div class="dcontent">     
+                        Artist: Le Aly di Lia di Donatella Marraoni <br>
+                        Dimensions: 770 * 760 cm <br>
+                        Price: 50$
+                </div>
+                </div>
+            
+        </div>
+
+        <div class="container_sold">
+                <img class="painting" src="auction2.jpg" alt="auction 2">
+                <div class="description">
+                <div class="dtitle">Charing Cross </div><br>
+                 <div class="descr"> Charing Cross ", London. A painting from London and the amazing architecture it has to offer.</div>
+                <div class="dcontent">     
+                  Artist: Andrew Lucas
+                   <br>
+                   Dimensions: 70 * 48 cm <br>
+                   Price: 65$ 
+                </div>
+                </div>
+            </div>
+        
+        <div class="container_sold">
+                <img class="painting" src="auction3.jpg" alt="auction 3">
+                <div class="description">
+                <div class="dtitle">La Ventana </div><br>
+                 <div class="descr"> Hand painted watercolor on Arches-hot pressed paper. Winsor & Newton colors.</div>
+                <div class="dcontent">
+                        Artist: Mahjabin <br>
+                        Dimensions: 49 * 72 cm <br>
+                        Price: 40$ <br>
+                </div>
+                </div>
+
+        </div>
+
+        <div class="container_sold">
+                <img class="painting" src="auction4.jpg" alt="auction 4">
+                <div class="description">
+                <div class="dtitle">I love you, I hate you </div><br>
+                 <div class="descr"> Original watercolor on paper</div>
+                <div class="dcontent">
+                        Artist: Alessandro Andreuccetti  <br>
+                        Dimensions: 50 * 90 cm <br>
+                        Price: 35$ <br>
+                </div>
+                </div>
+        </div>
+
+        
+
+        
+        </div>
+
+        <footer>
+                <br>
+                <div>
+                    Feeling social?
+                </div>
+                <div>
+                <a href="https://web.facebook.com/Art-721174541353330/?_rdc=1&_rdr">
+                   <img class="contact_icons" src="facebook_icon.png" alt="Facebook icon">
+                </a>
+                <a href="https://www.instagram.com/art/?hl=en">
+                   <img class="contact_icons" src="instagram_icon.png" alt="Instagram icon">
+                </a>
+                </div>
+                
+        </footer>
+    
+    </body>
+</html>
